@@ -31,10 +31,11 @@ margin-bottom: 30px;
 }
 
 .container {
-position: relative;
+position: fixed;
 width: 960px;
 margin: 0 auto;
 padding: 0;
+float:inherit;
 }
 
 #nav {
