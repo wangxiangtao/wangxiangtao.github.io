@@ -31,7 +31,7 @@ margin-bottom: 30px;
 }
 
 .container {
-position: fixed;
+position: static;
 width: 960px;
 margin: 0 auto;
 padding: 0;
