@@ -76,7 +76,7 @@ pre ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webki
 .balloons {
   background: #081319 url('../images/balloon.jpg') no-repeat left top;
   background-size: auto 100%;
-  height: 360px;
+  height: 330px;
   margin-bottom: 30px;
 }
 
@@ -114,7 +114,7 @@ pre ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webki
   text-decoration: none;
 }
 
-a, a:visited { color: #558; text-decoration: none; }
+a, a:visited { color: #0A0A0D; text-decoration: none; }
 a:hover {
   color: #A55;
   text-shadow: 0 0 0.4em #FFB, 0 0 2.8em #FFB;
