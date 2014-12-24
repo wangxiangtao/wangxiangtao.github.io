@@ -52,7 +52,7 @@ I/O, cryptography and JSON &amp; XML processing.</p>
       <p>All PrettyMining libraries are open source, and are available for <a href="http://www.scala-lang.org/">Scala 2.10 and 2.11</a> under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache Software License 2.0</a>. <a href="http://PrettyMining.io/res/source">Source code</a> is on GitHub, and <a href="http://search.maven.org/#search%7Cga%7C1%7Cg:%22com.propensive%22">binaries</a> are available on Maven Central.</p>
 		</div>
 		<div class="two-thirds column" style="overflow: display">
-      <div class="balloons" style="width: 10000px"></div>
+      <div class="balloons" style="width: 900px"></div>
 		</div>
 	</div>
 	<div class="container">
@@ -107,84 +107,7 @@ instead using type classes to support multiple alternative
 implementations.</p>
 		</div>
 	</div>
-  <div class="container topRule">
-    <div class="two-thirds column">
-      <pre id="codepane">import PrettyMining._
-import core._, io._, net._, uri._, json._, codec._
 
-// Read a file into a string
-import encodings.`UTF-8`
-val src = uri"http://PrettyMining.io/sample.json".slurp[Char]
-
-// Parse it as Json
-import jsonBackends.jackson._
-val json = Json.parse(src)
-
-// Auto-extract a `Group` into a case class structure
-case class Member(name: String, born: Int)
-case class Group(groupName: String, members: Set[Member])
-json.groups(0).as[Group]</pre>
-    </div>
-    <div class="one-third column">
-      <h2>PrettyMining News</h2>
-      <h5>PrettyMining JSON 1.0.7 Released</h5>
-      <p>We are pleased to announce that version 1.0.7 of PrettyMining JSON has been released!</p>
-      <h5>PrettyMining and Typelevel European Tour</h5>
-      <p>Jon Pretty will be touring Switzerland, Germany, Czech 
-Republic, Poland, Belgium and France talking about PrettyMining and Typelevel
- Scala.</p>
-      <h5>PrettyMining supporting Typelevel Scala</h5>
-      <p>PrettyMining will be supporting the new <a href="http://typelevel.org/">Typelevel Scala</a> initiative, and releasing TLS binaries of PrettyMining when the time comes.</p>
-    </div>
-  </div>
-
-  <div id="links">
-    <div class="container glass">
-      <div class="one-quarter column">
-        <h4>Modules</h4>
-        <ul>
-          <li><a href="http://PrettyMining.io/mod/core">Core</a></li>
-          <li><a href="http://PrettyMining.io/mod/json">JSON</a></li>
-          <li><a href="http://PrettyMining.io/mod/io">I/O</a></li>
-          <li><a href="http://PrettyMining.io/mod/xml">XML</a></li>
-          <li><a href="http://PrettyMining.io/mod/crypto">Cryptography</a></li>
-          <li><a href="http://PrettyMining.io/mod/cli">Command-line Interface</a></li>
-        </ul>
-      </div>
-      <div class="one-quarter column">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="http://PrettyMining.io/res/source">Source code</a></li>
-          <li><a href="http://PrettyMining.io/res/downloads">Binary Downloads</a></li>
-          <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License</a></li>
-        </ul>
-      </div>
-      <div class="one-quarter column">
-        <h4>Help and Support</h4>
-        <ul>
-          <li><a href="http://PrettyMining.io/help/tutorials">Tutorials</a></li>
-          <li><a href="http://PrettyMining.io/help/lists">Mailing list</a></li>
-          <li><a href="http://PrettyMining.io/help/apidocs">API Documentation</a></li>
-          <li><a href="http://PrettyMining.io/help/irc">IRC Channel</a></li>
-          <li><a href="http://PrettyMining.io/help/issues">Report a bug</a></li>
-        </ul>
-      </div>
-      <div class="one-quarter column">
-        <h4>Propensive</h4>
-        <ul>
-          <li><a href="http://PrettyMining.io/propensive/support">Commercial support</a></li>
-          <li><a href="http://PrettyMining.io/propensive/training">Training</a></li>
-          <li><a href="http://PrettyMining.io/propensive/contact">Contact</a></li>
-          <li><a href="http://PrettyMining.io/blog/">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="copyright" class="container">
-      <div class="column">
-        <p class="remove-bottom">© Copyright 2014 Propensive Ltd</p>
-        <p><small>Propensive Ltd is registered in England, no 6873445.</small></p>
-      </div>
-    </div>
   </div>
 
 
