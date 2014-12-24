@@ -80,6 +80,15 @@ pre ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webki
   margin-bottom: 30px;
 }
 
+img { 
+    image-rendering: optimizeSpeed;             /*                     */
+    image-rendering: -moz-crisp-edges;          /* Firefox             */
+    image-rendering: -o-crisp-edges;            /* Opera               */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and Safari) */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed       */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                */
+}
+
 #links {
   width: 100%;
   padding: 50px 0 30px 0;
