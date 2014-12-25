@@ -123,6 +123,7 @@ a:hover {
   color: #D75F43;
   text-shadow: 0 0 0.4em #FFB, 0 0 2.8em #FFB;
   text-decoration: none;
+  font-weight: bold;
 }
 
 
